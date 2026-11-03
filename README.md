@@ -5,7 +5,7 @@ The name blends "IME" and "Mieru" (見える, Japanese for "visible"), reflectin
 
 It shows the current input mode (such as `_A` or `あ`) right next to the mouse cursor, so you can check it without looking down at the taskbar.
 
-**Version: v1.0.15**
+**Version: v1.0.16**
 
 Project page: https://tabunugoku.github.io/Imel/
 
@@ -30,7 +30,7 @@ Project page: https://tabunugoku.github.io/Imel/
 ## Requirements
 
 * **OS**: Windows 11
-* **Runtime**: .NET 8.0 Desktop Runtime
+* **Runtime**: .NET 10.0 Desktop Runtime
 
 ## Installation and Usage
 
@@ -39,9 +39,9 @@ Download the zip file from the Releases page, extract it, and run `Imel.exe`.
 
 ### Building from source
 1.  Clone this repository.
-2.  Open `Imel.csproj` in Visual Studio 2022.
+2.  Open `Imel.csproj` in Visual Studio 2026 (with the .NET 10 SDK) or build with the .NET 10 SDK CLI.
 3.  Set the solution configuration to `Release` and build.
-4.  Run `Imel.exe` in the `bin/Release/net8.0-windows` folder.
+4.  Run `Imel.exe` in the `bin/Release/net10.0-windows` folder.
 
 Release builds also copy `README.md` into the same folder.
 
@@ -62,6 +62,10 @@ When "Check for updates" under "General" in the settings window is ON, Imel chec
 * Checks connect to `api.github.com`. Only ordinary HTTPS connection information (such as your IP address) and a User-Agent containing the Imel version are sent. Nothing is sent while the setting is OFF.
 
 ## Changelog
+
+### v1.0.16 (2026-11-03)
+
+* **Runtime update**: Migrated from .NET 8 to .NET 10. Requires the .NET 10.0 Desktop Runtime.
 
 ### v1.0.15 (2026-10-06)
 
@@ -181,8 +185,8 @@ When "Check for updates" under "General" in the settings window is ON, Imel chec
 
 ## Development Environment
 
-* Visual Studio 2022
-* C# (WPF / .NET 8)
+* Visual Studio 2026 (.NET desktop development workload) or the .NET 10 SDK
+* C# (WPF / .NET 10)
 
 ## Development and Testing
 
@@ -214,7 +218,7 @@ See the LICENSE file for details.
 
 マウスカーソルのすぐそばに、現在の入力モード（「_A」や「あ」など）を表示します。視線をタスクバーに移動させることなく、手元で入力状態を確認できます。
 
-**バージョン: v1.0.15**
+**バージョン: v1.0.16**
 
 紹介ページ: https://tabunugoku.github.io/Imel/
 
@@ -237,7 +241,7 @@ See the LICENSE file for details.
 ## 動作環境
 
 * **OS**: Windows 11
-* **ランタイム**: .NET 8.0 Desktop Runtime
+* **ランタイム**: .NET 10.0 Desktop Runtime
 
 ## インストールと実行
 
@@ -246,9 +250,9 @@ See the LICENSE file for details.
 
 ### ソースコードからビルドする場合
 1.  このリポジトリをクローンします。
-2.  Visual Studio 2022で `Imel.csproj` を開きます。
+2.  Visual Studio 2026（.NET 10 SDK）で `Imel.csproj` を開くか、.NET 10 SDK の CLI でビルドします。
 3.  ソリューション構成を `Release` に設定し、ビルドします。
-4.  `bin/Release/net8.0-windows` フォルダ内の `Imel.exe` を実行します。
+4.  `bin/Release/net10.0-windows` フォルダ内の `Imel.exe` を実行します。
 
 Releaseビルドでは、同じフォルダに `README.md` もコピーされます。
 
@@ -269,6 +273,10 @@ Releaseビルドでは、同じフォルダに `README.md` もコピーされま
 * 確認のときは `api.github.com` に接続します。送信されるのは、通常のHTTPS通信の情報（IPアドレスなど）と、Imelのバージョンを含むUser-Agentだけです。OFFのあいだは通信しません。
 
 ## 更新履歴
+
+### v1.0.16 (2026-11-03)
+
+* **ランタイムの更新**: .NET 8 から .NET 10 に移行しました。.NET 10.0 Desktop Runtime が必要です。
 
 ### v1.0.15 (2026-10-06)
 
@@ -388,8 +396,8 @@ Releaseビルドでは、同じフォルダに `README.md` もコピーされま
 
 ## 開発環境
 
-* Visual Studio 2022
-* C# (WPF / .NET 8)
+* Visual Studio 2026 (.NET desktop development workload) or the .NET 10 SDK
+* C# (WPF / .NET 10)
 
 ## 開発・テスト
 
